@@ -8,6 +8,7 @@ class Receipt(models.Model):
     purchaseDate = models.DateField()
     purchaseTime = models.TimeField()
     total = models.DecimalField(max_digits = 10, decimal_places = 2)
+    points = models.IntegerField(default = 0)
 
 class Item(models.Model):
     receipt = models.ForeignKey(Receipt, on_delete = models.CASCADE, related_name = "items")
