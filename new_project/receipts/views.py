@@ -22,6 +22,6 @@ def processReceipt(request):
     if serializer.is_valid():
         serializer.validated_data["points"] = calculatePoints(serializer)
         serializer.save()
-        return Response({"id": serializer.data["points"]}, status = status.HTTP_201_CREATED)
+        return Response({"id": serializer.data["id"]}, status = status.HTTP_201_CREATED)
     return Response(serializer.errors, status = status.HTTP_400_BAD_REQUEST)
     
