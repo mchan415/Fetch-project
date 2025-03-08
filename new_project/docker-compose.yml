@@ -1,6 +1,0 @@
-services: 
-  web:
-    build: .
-    image: fetch-project
-    ports:
-      - "8000:8000"
