@@ -10,7 +10,6 @@
    docker-compose up
    ```
 3. Go to 'http://localhost:8000/' in your browser.
-4. Once there, the post endpoint can be accessed at 'http://localhost:8000/receipts/process/'
-5. The get endpoint can be accessed at 'http://localhost:8000/receipts/receiptID/points/' where receiptID is the given ID from step 4.
+4. Once there, the post endpoint can be accessed at 'http://localhost:8000/receipts/process'
+5. The get endpoint can be accessed at 'http://localhost:8000/receipts/receiptID/points' where receiptID is the given ID from step 4.
 
-   *(Note: Django by default adds the extra '/' at the end of the url so make sure that is included when testing.)*
